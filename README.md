@@ -6,6 +6,8 @@
   -backend
 - Amirouche 
 
+### GIT ET GITHUB
+
 Afin de connaitre les différentes versions de notre code qui seront effectuées tout au long de notre projet, nous allons utiliser un logiciel de versionning: `Git` et un logiciel de gestion de version: `GitHub`.
 
 Dans un premier temps il faut télécharger et installer `Git` depuis leur [site](https://git-scm.com/downloads) puis s'inscrire sur [GitHub]("https://github.com/). On utilisera l'invite de commande ou la console `GitBash` pour effectuer les commandes.
