@@ -35,6 +35,6 @@ Changer de branche: `git checkout` + nom de la branche.
 
 Afin d'envoyer la nouvelle branche en local sur le dépot distant: `git push --set-upstream origin ` + nom de la branche.
 
-Après avoir testé le code de la branche secondaire, il faudra fusionner la branche du correctif et poussez le résultat en production: `git merge` + nom de la branche.
+Après avoir testé et validé le code de la branche secondaire, il faudra fusionner la branche du correctif et poussez le résultat en production: `git merge` + nom de la branche.
   
   -Frontend
