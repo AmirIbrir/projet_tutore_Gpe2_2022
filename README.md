@@ -20,7 +20,7 @@ Pour ajouter toutes les modifications d'un travail sur une machine en local: `gi
 
 Pour connaitre l'état de nos fichiers: `git status`.
  
-Après avoir pousser les fichiers en zone d'index, on crée un nouveau commit afin de sauvegarder le travail avec la commande suivante: `git commit -m` + détails du commit. Puis il faut pousser les modifications vers un serveur distant: `git push -u origin main`.
+Après avoir pousser les fichiers en zone d'index, on crée un nouveau commit afin de sauvegarder le travail avec la commande suivante: `git commit -m` + "détails du commit". Puis il faut pousser les modifications vers un serveur distant: `git push -u origin main`.
 
 Sur GitHub il faut crée un nouveau repository (dépôt) et le relié au projet en ajoutant le lien du dépôt à la commande suivante: `git clone` + lien_GitHub.com.
 
