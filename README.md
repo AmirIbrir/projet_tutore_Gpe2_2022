@@ -12,7 +12,7 @@ Afin de connaitre les différentes versions de notre code qui seront effectuées
 
 Dans un premier temps il faut télécharger et installer `Git` depuis leur [site](https://git-scm.com/downloads) puis s'inscrire sur [GitHub](https://github.com/). On utilisera l'invite de commande ou la console `Git Bash` pour effectuer les commandes.
 
-Afin d'initialiser git je dois le configurer et renseigner un nom et une adresse mail: `git config --global user.name` + mon_nom et `git config --global user.email` + mon_email. Cette action synchronisera git avec le compte GitHub. Pour afficher le nom et l'email: `git config --global --list`.
+Afin d'initialiser git il faut le configurer et renseigner un nom et une adresse mail: `git config --global user.name` + mon_nom et `git config --global user.email` + mon_email. Cette action est nécéssaire pour relier git avec le compte GitHub. Pour afficher le nom et l'email: `git config --global --list`.
 
 Lorsque on souhaite versionner son travail en local on initialise `Git`, tout en étant sur le bon dossier avec la commande `git init`. Un dossier `.git` est crée.
 
