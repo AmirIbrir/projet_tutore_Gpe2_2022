@@ -3,6 +3,7 @@
 <?php include 'includes/head.php'; ?>
 <body>
     
+    
 <form>
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Pseudo</label>
