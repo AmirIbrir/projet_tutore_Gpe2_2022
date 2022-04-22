@@ -1,4 +1,4 @@
-# projet_tutore_Gpe2_2022
+# projet_tutoré_Gpe2_2022
 ## Tâches à réaliser:
 - Ahmed
 - Jordy
