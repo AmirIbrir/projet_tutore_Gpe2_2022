@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+//Pour avoir accès à tout le code qui se trouve dans le fichier head.php
 <?php include 'includes/head.php'; ?>
 <body>
     
