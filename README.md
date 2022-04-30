@@ -38,3 +38,16 @@ Afin d'envoyer la nouvelle branche en local sur le dépot distant: `git push --s
 Après avoir testé et validé le code de la branche secondaire, il faudra fusionner la branche du correctif et poussez le résultat en production: `git merge` + nom de la branche.
   
   -Frontend
+  
+###PUBLISH-QUESTION.PHP
+
+Faire un formulaire dans lequel l'utilisateur pourra publier sa question
+Inclure le fichier securityAction.php pour la sécurité du compte,l'utilisateur devra s'authentifier.
+J'inclus avec la fonction 'include' le fichier navbar.php pour afficher la barre de navigation.
+
+###NAVABAR.PHP
+
+Dans bootstrap je récupère le code d'une barre de navigation en modifiant les noms et les liens dans le fichier navbar.php et je l'inclus dans mon fichier publish-question.php.
+
+###INDEX.PHP
+Dans ce fichier qui sera ma page d'accueil, j'inclus les fichiers head.php et navbar.php
