@@ -5,7 +5,7 @@ require('actions/database.php');
 // On vérifie si notre variable existe pour executer le bouton 's'inscrire'
 if(isset($_POST['validate'])){
     //On vérifie si l'utilisateur remplie bien tout les champs
-    if(!empty($_POST['pseudo']) AND !empty($_POST['password']) );
+    if(!empty($_POST['pseudo']) AND !empty($_POST['password']) ){
 
         //On stocke toutes les données récupérées dans des variables
         //'htmlspecialchars'=> éviter qu'un utilisateur mette du code HTML dans les champs
@@ -17,6 +17,7 @@ if(isset($_POST['validate'])){
         //On vérifie si l'utilisateur existe dans la table users
         //$bdd -> variable qui stocke la base de données (database.php) 
         //Récupérer les données dans la table 'users' qui correspond au pseudo dans la BDD
+        //La méthode 'prepare' nous permer de récupérer les données dans la table 'users'
         $checkIfUserExists = $bdd->prepare('SELECT * FROM users WHERE pseudo = ?');
         $checkIfUserExists->execute(array($user_pseudo));
 
@@ -50,4 +51,5 @@ if(isset($_POST['validate'])){
  
 }else{
     $errorMsg = "Veuillez svp compléter tous les champs !"; 
+}
 }

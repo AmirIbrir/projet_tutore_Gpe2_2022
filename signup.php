@@ -10,7 +10,7 @@
     <form class="container" method="POST"> <!--"POST"=> envoyer des données d'un formulaire vers code PHP -->
         <?php
             if(isset($errorMsg)){
-                echo '<p>'.$errorMsg.'</p>';
+                echo '<p class="text-danger">'.$errorMsg.'</p>';
             }
         ?>
     <div class="mb-3">

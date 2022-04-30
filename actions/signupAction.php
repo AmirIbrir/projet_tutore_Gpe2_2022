@@ -6,7 +6,7 @@ require('actions/database.php');
 // On vérifie si notre variable existe pour executer le bouton 's'inscrire'
 if(isset($_POST['validate'])){
     //On vérifie si l'utilisateur remplie bien tout les champs
-    if(!empty($_POST['pseudo']) AND !empty($_POST['lastname']) AND !empty($_POST['firstname']) AND !empty($_POST['password']) );
+    if(!empty($_POST['pseudo']) AND !empty($_POST['lastname']) AND !empty($_POST['firstname']) AND !empty($_POST['password']) ){
         //On stocke toutes les données récupérées dans des variables
         //'htmlspecialchars'=> éviter qu'un utilisateur mette du code HTML dans les champs
         $user_pseudo = htmlspecialchars($_POST['pseudo']);
@@ -29,7 +29,7 @@ if(isset($_POST['validate'])){
             $getInfosOfThisUserReq = $bdd->prepare('SELECT id, pseudo, nom, prenom FROM users WHERE nom = ? AND prenom = ? AND pseudo = ?');
             $getInfosOfThisUserReq->execute(array($user_lastname, $user_firstname, $user_pseudo));
         
-            $userInfos = $getInfosOfThisUserReq->fetch();
+            $usersInfos = $getInfosOfThisUserReq->fetch();
 
             //Authentifier l'utilisateur sur le site et récupérer ses données dans des variables globales sessions
             $_SESSION['auth'] = true;
@@ -44,6 +44,7 @@ if(isset($_POST['validate'])){
             $errorMsg = "L'utilsateur existe déja !";
         }
 
-}else{
+    }else{
     $errorMsg = "Veuillez svp compléter tous les champs !"; 
+    }
 }
