@@ -1,4 +1,7 @@
-<?php require('actions/securityAction.php'); ?>
+<?php  
+    require('actions/questions/publishQuestionAction.php');
+    require('actions/users/securityAction.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <?php include 'includes/head.php'; ?>
@@ -10,6 +13,8 @@
         <?php
             if(isset($errorMsg)){
                 echo '<p class="text-danger">'.$errorMsg.'</p>';
+            }elseif(isset($successMsg)){
+                echo '<p>'.$successMsg.'</p>';
             }
         ?>
     <div class="mb-3">

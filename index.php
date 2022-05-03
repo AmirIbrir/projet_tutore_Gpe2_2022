@@ -1,4 +1,7 @@
-<?php require('actions/securityAction.php'); ?>
+<?php 
+session_start();
+require('actions/users/securityAction.php'); 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
