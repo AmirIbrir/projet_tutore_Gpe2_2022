@@ -2,7 +2,9 @@
 
 require('actions/database.php');
 
+//Valider le formulaire
 if (isset($_POST['validate'])){
+    //Vérifier si les champs ne sont pas vides
     if(!empty($_POST['title']) AND !empty($_POST['description']) AND !empty($_POST['content'])){
         //Stocker toutes les données dans des variables
         //Récupere toutes les données de l'utilisateur
@@ -13,6 +15,7 @@ if (isset($_POST['validate'])){
         $question_id_author = $_SESSION['id'];
         $question_pseudo_author = $_SESSION['pseudo'];
 
+        //Insérer la question sur le site
         $insertQuestionOnWebsite = $bdd->prepare('INSERT INTO questions(titre,description,contenu,id_auteur,pseudo_auteur,date_publication)VALUES (?,?,?,?,?,?)');
         $insertQuestionOnWebsite->execute(
             array(
