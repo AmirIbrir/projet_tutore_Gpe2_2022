@@ -1,6 +1,7 @@
 <?php 
-    require('actions/questions/myQuestionsAction.php'); 
     require('actions/users/securityAction.php'); //Permet à l'utilisateur d'etre rediriger vers la page d'accueil si pas authentifé
+    require('actions/questions/myQuestionsAction.php'); 
+    
 
 ?>
 <!DOCTYPE html>
@@ -25,7 +26,7 @@
                         <p>Description: <?php echo $questions['description']; ?></p>
                     </p>
                     <a href="#" class="btn btn-primary">Accéder à la question</a>
-                    <a href="#" class="btn btn-warning">Modifier la question</a>
+                    <a href="edit-question.php?id=<?php echo $questions['id']; ?>" class="btn btn-warning">Modifier la question</a>
     
                 </div>
             </div>

@@ -1,5 +1,7 @@
 <?php
 
+//Permet à l'utilisateur de rester connecté
+session_start();
 require('actions/database.php');
 
 // On vérifie si notre variable existe pour executer le bouton 's'inscrire'

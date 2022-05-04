@@ -22,7 +22,7 @@ if(isset($_GET['id']) AND !empty($_GET['id'])){
             $question_title = $questionInfos['titre'];
             $question_description = $questionInfos['description'];
             $question_content = $questionInfos['contenu'];
-            $question_date = $questionInfos['date_publication'];
+           
 
             //'str_replace'=> Remplace les sauts de ligne (<br />) par un champs vide dans 'description' et 'contenu'
             $question_description = str_replace('<br />', '', $question_description);

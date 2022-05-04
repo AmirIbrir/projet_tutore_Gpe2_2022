@@ -2,9 +2,6 @@
 <?php
 
 try{
-
-    //Permet à l'utilisateur de rester connecté
-    session_start();
     
     //Variable qui nous permet d'acceder a la BDD 
     //Nouvelle instance de la classe PDO, pour faire des requetes SQL

@@ -1,5 +1,8 @@
 <?php
 
+//Permet à l'utilisateur de rester connecté
+session_start();
+
 //'require' permet de planter la page si erreur au niveau du chemin
 require('actions/database.php');
 
