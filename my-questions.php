@@ -27,6 +27,7 @@
                     </p>
                     <a href="#" class="btn btn-primary">Accéder à la question</a>
                     <a href="edit-question.php?id=<?php echo $questions['id']; ?>" class="btn btn-warning">Modifier la question</a>
+                    <a href="actions/questions/deleteQuestionAction.php?id=<?php echo $questions['id']; ?>" class="btn btn-danger">Supprimer la question</a>
     
                 </div>
             </div>

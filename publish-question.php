@@ -1,6 +1,7 @@
-<?php  
-    require('actions/questions/publishQuestionAction.php');
+<?php 
     require('actions/users/securityAction.php');
+    require('actions/questions/publishQuestionAction.php');
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
