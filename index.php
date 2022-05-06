@@ -1,5 +1,6 @@
 <?php 
     session_start();
+    require('actions/questions/showAllQuestionsAction.php')
 ?>
 
 <!DOCTYPE html>
@@ -25,6 +26,30 @@
                 </div>
             </div>
         </form>
+
+        <br>
+
+        <?php 
+           while($question = $getAllQuestions->fetch()){
+               ?>
+                <div class="card ">
+                    <div class="car-header">
+                      <?= $question['titre'];?>
+                    </div>
+                    <div class="card-body">
+                    <?= $question['description']; ?>
+                    </div>
+                    <div class="card-footer">
+                        Publié par <?= $question['pseudo_auteur']; ?> le <?= $question['date_publication']; ?>
+                    </div>
+                </div>
+
+                <br>
+
+               <?php
+
+           } 
+        ?>
     </div>
 </body>
 </html>
