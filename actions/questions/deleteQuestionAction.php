@@ -30,6 +30,7 @@ if(isset($_GET['id']) AND !empty($_GET['id'])){
 
             //Rediriger l'utilisateur vers ses questions
             header('Location: ../../my-questions.php');
+            
 
         }else{
             echo "Vous n'avez pas le droit de supprimer une question qui ne vous appartient pas ! :(";
