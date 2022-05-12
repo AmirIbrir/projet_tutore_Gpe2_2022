@@ -34,7 +34,8 @@
                ?>
                 <div class="card ">
                     <div class="car-header">
-                      <a href="article.php?id=<?php echo $question['id']; ?>"></a><?= $question['titre'];?>
+                    <a href="article.php?id=<?php echo $question['id']; ?>"><?= $question['titre'];?></a>
+                    <a href="article.php?id=<?php echo $question['id']; ?>"><?= $question['titre'];?></a>
                     </div>
                     <div class="card-body">
                     <?= $question['description']; ?>

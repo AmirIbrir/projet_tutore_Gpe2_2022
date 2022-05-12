@@ -12,22 +12,22 @@
     <br><br>
     <div class="container">
     <?php
-        while($questions = $getAllQuestions->fetch()){ //Récupérer chaque données
+        while($question = $getAllQuestions->fetch()){ //Récupérer chaque données
             ?>
             <!-- Dans Bootstrap rechercher 'cards' -->
             <div class="card">
                 <h5 class="card-header">
-                    <a href="article.php?id=<?php echo $questions['id']; ?>"><?= $questions['titre'];?></a>
-                    <p>Titre question: <?php echo $questions['titre']; ?></p>
+                    <a href="article.php?id=<?php echo $question['id']; ?>"><?= $question['titre'];?></a>
+                    <p>Titre question: <?php echo $question['titre']; ?></p>
                 </h5>
                 <div class="card-body">
                     
                     <p class="card-text">
-                        <p>Description: <?php echo $questions['description']; ?></p>
+                        <p>Description: <?php echo $question['description']; ?></p>
                     </p>
-                    <a href="article.php?id=<?php echo $questions['id']; ?>" class="btn btn-primary">Accéder à la question</a>
-                    <a href="edit-question.php?id=<?php echo $questions['id']; ?>" class="btn btn-warning">Modifier la question</a>
-                    <a href="actions/questions/deleteQuestionAction.php?id=<?php echo $questions['id']; ?>" class="btn btn-danger">Supprimer la question</a>
+                    <a href="article.php?id=<?php echo $question['id']; ?>" class="btn btn-primary">Accéder à la question</a>
+                    <a href="edit-question.php?id=<?php echo $question['id']; ?>" class="btn btn-warning">Modifier la question</a>
+                    <a href="actions/questions/deleteQuestionAction.php?id=<?php echo $question['id']; ?>" class="btn btn-danger">Supprimer la question</a>
     
                 </div>
             </div>
