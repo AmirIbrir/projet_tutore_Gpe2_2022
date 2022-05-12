@@ -1,6 +1,8 @@
 <?php 
     session_start();
     require('actions/questions/showArticleContentAction.php'); 
+    require('actions/questions/postAnswerAction.php');
+    require('actions/questions/showAllAnswersOfQuestionAction.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,6 +23,7 @@
             if (isset($question_publication_date)){
                 ?>
                 <section class="show-content">
+                    
                 <h3><?php echo $question_title; ?></h3>
                 <hr>
                 <p><?php echo $question_content; ?></p>
@@ -37,11 +40,27 @@
                         <label for="exampleInputEmail1" class="form-label">Réponse:</label>
                         <textarea name="answer" class="form-control"></textarea>
                         <br>
-                        <button class="btn btn-primary">Répondre</button>
-
+                        <button class="btn btn-primary" type="submit" name="validate">Répondre</button>
+                    </div>
                     </form>
+                
+                    <?php
+                        while($answer = $getAllAnswersOfThisQuestion->fetch()){
+                            ?>
+                            <div class="card">
+                                <div class="card-header">
+                                    <?php echo $answer['pseudo_auteur']?>
+                                </div>
+                                <div class="card-body">
+                                    <?php echo $answer['contenu']?>
+                                </div>
 
+                            </div>
+                            <br>
+                            <?php
 
+                        }
+                    ?>
                 </section>
                 
                 <?php
