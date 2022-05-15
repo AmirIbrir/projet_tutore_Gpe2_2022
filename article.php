@@ -28,7 +28,7 @@
                 <hr>
                 <p><?php echo $question_content; ?></p>
                 <hr>
-                <small><?php echo $question_pseudo_author . ' ' . $question_publication_date; ?></small>
+                <small><?php echo '<a href="profile.php?id=' .$question_id_author.'"> '. $question_pseudo_author . '</a> ' . $question_publication_date; ?></small>
                 </section>
 
                 <br>

@@ -1,4 +1,4 @@
-<!--Permet de lier database.ph à la BDD  -->
+<!--Permet de lier database.php à la BDD  -->
 <?php
 
 try{

@@ -1,6 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Mon Forum</a>
+     <!-- Brand/logo -->
+  <a class="navbar-brand" href="#">
+    <img src="assets/images/error.png" alt="logo" style="width:40px;">
+  </a>
+    <a class="navbar-brand" href="#">Forum</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -18,6 +22,9 @@
         <?php
           if(isset($_SESSION['auth'])){
             ?>
+              <li class="nav-item">
+              <a class="nav-link" href="profile.php?id=<?php echo $_SESSION['id']; ?>">Mon profil</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="actions/users/logoutAction.php">Deconnexion</a>
             </li>
