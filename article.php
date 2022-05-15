@@ -49,7 +49,9 @@
                             ?>
                             <div class="card">
                                 <div class="card-header">
-                                    <?php echo $answer['pseudo_auteur']?>
+                                    <a href="profile.php?id=<?php echo $answer['id_auteur']; ?>">
+                                        <?php echo $answer['pseudo_auteur']?>
+                                    </a>
                                 </div>
                                 <div class="card-body">
                                     <?php echo $answer['contenu']?>
