@@ -5,6 +5,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+    
 <?php include 'includes/head.php'; ?>
 <body>
     <?php include 'includes/navbar.php'; ?>
@@ -18,7 +19,7 @@
             <div class="form-group row">
 
                 <div class="col-8">
-                    <input type="search" name="search" class="form-control">
+                    <input type="search" name="search" class="form-control" placeholder="Entrer votre recherche...">
                 </div>
 
                 <div class="col-4"> 
